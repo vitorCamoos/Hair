@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+   
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  
+}
+
+
+.site-title h1{
+    font-weight: 400;
+    font-family: "Lora", sans-serif;
+    color: #1e56a0;
+    font-size: 2rem;
+}
+
+
+.subtitle{
+    font-weight: 700 ;
+    color: #1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: capitalize;
+}
+.container{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    background: silver; /* Substitua     pela cor desejada em formato hexadecimal ou nome da cor */
+    padding: 0.5px;
+    
+    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0.25);
+}
+
+@media (max-width: 675px) {
+    .container-nav{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin-left: 2em;
+}
+nav a {
+    text-decoration: none;
+    color: #163172;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 2em 0;
+}
+nav a:hover, 
+nav a:focus{
+    color: #1e56a0;
+}
+.current-page{
+    color: #1e56a0;
+}
+.current-page:hover{
+    color: #1e56a0;
+}
+@media (max-width: 637px){
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 0.5em;
+    }
+
+}
+/* Home page */
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 22, 22, 0.65);
+    background: url('../img/andrea-donato-V3NNg858vkA-unsplash.jpg') center/cover no-repeat ;
+    opacity: 0.7;
+    height: 85vh;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.lading-text h3{
+    font-weight: 700;
+    color: #fff;
+    font-family: "lora" sans-serif;
+}
+.lading-text h1 {
+    font-size: 450%;
+    font-weight: 700;
+    color: #fff;
+    font-family: "lora" sans-serif;
+    padding-bottom: 0;
+    margin: 0 0;
+}
+@media (max-width: 600px) {
+    .lading-text h1{
+        font-size: 260%;
+    }
+}
+.btn-hire{
+    background-color: #163172;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn-hire:hover,
+.btn-hire:focus{
+    background-color: #1e56a0;
+}
+@media (max-width: 800px) {
+    .btn-hire{
+        padding: 8px 16px;
+    }
+}
+#hr-main{
+    width: 100px;
+    height: 5px;
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 8px;
+}
